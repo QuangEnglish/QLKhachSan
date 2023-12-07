@@ -1,4 +1,4 @@
-﻿create database QLKhachSan
+﻿create com.demo.utils QLKhachSan
 go
 
 use QLKhachSan
