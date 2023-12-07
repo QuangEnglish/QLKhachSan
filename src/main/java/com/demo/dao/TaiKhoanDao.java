@@ -65,13 +65,7 @@ public class TaiKhoanDao {
     } catch (SQLException e) {
       log.error("ERR", e);
     } finally {
-      if (rs != null) {
-        try {
-          rs.close();
-        } catch (SQLException e) {
-          log.error("ERR", e);
-        }
-      }
+      JDBCUtil.close(rs);
     }
     return taiKhoan;
   }
